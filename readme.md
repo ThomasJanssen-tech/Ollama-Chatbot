@@ -11,7 +11,7 @@
 
 ```
 git clone https://github.com/ThomasJanssen-tech/Ollama-Chatbot.git
-cd Ollama Chatbot
+cd Ollama-Chatbot
 ```
 
 2. Create a virtual environment
