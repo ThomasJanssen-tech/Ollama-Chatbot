@@ -8,6 +8,8 @@ st.title("Chatbot")
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
+    st.session_state.messages.append(SystemMessage("Act like an astronaut"))
+
 # display chat messages from history on app rerun
 for message in st.session_state.messages:
     if isinstance(message, HumanMessage):
@@ -31,7 +33,10 @@ if prompt:
 
     # create the echo (response) and add it to the screen
 
-    llm = ChatOllama(model="llama3.2")
+    llm = ChatOllama(
+        model="llama3.2",
+        temperature=2
+    )
 
     result = llm.invoke(st.session_state.messages).content
 
