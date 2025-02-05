@@ -40,5 +40,8 @@ pip install -r requirements.txt
 2. Execute the following command:
 
 ```
-streamlit run 1_python_ollama.py
+python 1_python_ollama.py
+streamlit run 2_streamlit_example.py
+streamlit run 3_chatbot_echo.py
+streamlit run 4_chatbot_ollama.py
 ```
